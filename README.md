@@ -8,8 +8,8 @@ REST API receiving accelorometers data and storing them into Cassandra. Each acc
 
 ## Prerequisites
 * Cassandra [http://apache.mirrors.ovh.net/ftp.apache.org/dist/cassandra/2.1.4/apache-cassandra-2.1.4-bin.tar.gz](2.1.4) installed locally
-* Java 8
-* Maven 3
+* Java 8+
+* Gradle 2.3+
 
 ## Start the application
 `mvn spring-boot:run`
