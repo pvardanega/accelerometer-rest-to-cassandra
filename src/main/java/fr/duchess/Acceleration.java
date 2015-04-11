@@ -50,4 +50,9 @@ public class Acceleration {
     public void setZ(Double z) {
         this.z = z;
     }
+
+    @Override
+    public String toString() {
+        return "[timestamp: " + timestamp + ", x: " + x + ", y: " + y + ", z: " + z + ']';
+    }
 }
