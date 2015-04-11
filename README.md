@@ -1,7 +1,7 @@
 # accelerometer-rest-to-cassandra
 
 REST API receiving accelorometers data and storing them into Cassandra. Each acceleration contains:
-* date when it has been captured (format is ISO-8601, eg, 2015-04-11T18:48:43.511Z)
+* date when it has been captured as a timestamp (eg, 1428773040488)
 * acceleration force along the x axis (unit is m/s²) 
 * acceleration force along the y axis (unit is m/s²)
 * acceleration force along the z axis (unit is m/s²) 
@@ -20,7 +20,7 @@ REST API receiving accelorometers data and storing them into Cassandra. Each acc
 * body: 
 ```
 {
-  "date": "2015-04-11T18:48:43.511Z",
+  "date": 1428773040488,
   "x": 0.98,
   "y": 6.43,
   "z": 9.01,
