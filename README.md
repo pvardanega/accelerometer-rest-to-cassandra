@@ -21,9 +21,9 @@ REST API receiving accelorometers data and storing them into Cassandra. Each acc
 ```
 {
   "date": "2015-04-11T18:48:43.511Z",
-  "x": 0.98
-  "y": 6.43
-  "z": 9.01
+  "x": 0.98,
+  "y": 6.43,
+  "z": 9.01,
 }
 ```
 * returned status: 201 CREATED
