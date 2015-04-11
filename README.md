@@ -12,7 +12,7 @@ REST API receiving accelorometers data and storing them into Cassandra. Each acc
 * Gradle 2.3+
 
 ## Start the application
-`mvn spring-boot:run`
+`gradle build && java -jar build/libs/accelerometer-rest-to-cassandra-1.0.jar`
 
 ## Use the API
 * /POST http://localhost:8080/accelerometor-api/acceleration
@@ -20,7 +20,7 @@ REST API receiving accelorometers data and storing them into Cassandra. Each acc
 * body: 
 ```
 {
-  "date": 1428773040488,
+  "timestamp": 1428773040488,
   "x": 0.98,
   "y": 6.43,
   "z": 9.01,
