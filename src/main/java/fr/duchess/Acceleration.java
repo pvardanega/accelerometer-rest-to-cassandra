@@ -1,5 +1,6 @@
 package fr.duchess;
 
+import javax.validation.constraints.NotNull;
 import org.springframework.data.cassandra.mapping.Column;
 import org.springframework.data.cassandra.mapping.PrimaryKey;
 import org.springframework.data.cassandra.mapping.Table;
@@ -8,15 +9,19 @@ import org.springframework.data.cassandra.mapping.Table;
 public class Acceleration {
 
     @PrimaryKey
+    @NotNull
     private Long timestamp;
 
     @Column
+    @NotNull
     private Double x;
 
     @Column
+    @NotNull
     private Double y;
 
     @Column
+    @NotNull
     private Double z;
 
     public Long getTimestamp() {
